@@ -1,13 +1,22 @@
-package org.example.Models;
+package org.example.models;
 
-import lombok.Getter;
-import lombok.Setter;
+public class Operator extends BaseModel {
+    private String name;
+    private int empId;
 
-@Getter
-@Setter
-public class Operator {
-    String name;
-    Long id;
-    Long phNum;
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(int empId) {
+        this.empId = empId;
+    }
 }

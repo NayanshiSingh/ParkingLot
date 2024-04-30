@@ -1,14 +1,31 @@
-package org.example.Models;
+package org.example.models;
 
-import lombok.Getter;
-import lombok.Setter;
-import org.example.Models.Enums.VehicleType;
+public class Vehicle extends BaseModel {
+    private String number;
+    private VehicleType vehicleType;
+    private String ownerName;
 
-@Getter
-@Setter
-public class Vehicle {
-    Long id;
-    Long vehNum;
-    VehicleType vehicleType;
-    User owner;
+    public String getNumber() {
+        return number;
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public VehicleType getVehicleType() {
+        return vehicleType;
+    }
+
+    public void setVehicleType(VehicleType vehicleType) {
+        this.vehicleType = vehicleType;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
 }

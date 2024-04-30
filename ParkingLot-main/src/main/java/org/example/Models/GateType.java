@@ -1,4 +1,4 @@
-package org.example.Models.Enums;
+package org.example.models;
 
 public enum GateType {
     ENTRY,
